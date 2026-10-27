@@ -1,0 +1,83 @@
+{
+  "dataset_sha256": "b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+  "fit_ids_sha256": "af8271c8dee5b9f2b86456b9aadc547f79414d9bd3126381ee8bfc9a7c561cab",
+  "fit_scope": "development fit cohort only; eval and holdout never used",
+  "generated_utc": "2026-10-27T03:15:22Z",
+  "n_fit": 68813,
+  "note": "PCA is a linear variance-retention transform; PCA95 is not 95% cluster accuracy. Visualization PCA2D is not the default training representation.",
+  "results": {
+    "none": {
+      "feature_names": [
+        "acousticness",
+        "danceability",
+        "energy",
+        "valence",
+        "tempo",
+        "loudness",
+        "speechiness",
+        "instrumentalness",
+        "liveness"
+      ],
+      "n_components": 9,
+      "pca_present": false
+    },
+    "pca90": {
+      "cumulative_explained_variance": [
+        0.3215803970248366,
+        0.47993124011038,
+        0.6187178399962852,
+        0.7186617925513841,
+        0.8156998659735594,
+        0.8974007450461863,
+        0.9482292167473126
+      ],
+      "cumulative_final": 0.9482292167473126,
+      "explained_variance_ratio": [
+        0.3215803970248366,
+        0.15835084308554345,
+        0.13878659988590514,
+        0.09994395255509893,
+        0.09703807342217534,
+        0.0817008790726269,
+        0.05082847170112637
+      ],
+      "figure": "artifacts/pca/20261027T031522Z/figures/pca_diagnostics_pca90.png",
+      "loadings_table": "artifacts/pca/20261027T031522Z/tables/loadings_pca90.csv",
+      "n_components": 7,
+      "pca_present": true,
+      "variance_requested": 0.9,
+      "variance_table": "artifacts/pca/20261027T031522Z/tables/explained_variance_pca90.csv"
+    },
+    "pca95": {
+      "cumulative_explained_variance": [
+        0.3215803970248366,
+        0.47993124011038,
+        0.6187178399962852,
+        0.7186617925513841,
+        0.8156998659735594,
+        0.8974007450461863,
+        0.9482292167473126,
+        0.9844352897966916
+      ],
+      "cumulative_final": 0.9844352897966916,
+      "explained_variance_ratio": [
+        0.3215803970248366,
+        0.15835084308554345,
+        0.13878659988590514,
+        0.09994395255509893,
+        0.09703807342217534,
+        0.0817008790726269,
+        0.05082847170112637,
+        0.03620607304937894
+      ],
+      "figure": "artifacts/pca/20261027T031522Z/figures/pca_diagnostics_pca95.png",
+      "loadings_table": "artifacts/pca/20261027T031522Z/tables/loadings_pca95.csv",
+      "n_components": 8,
+      "pca_present": true,
+      "variance_requested": 0.95,
+      "variance_table": "artifacts/pca/20261027T031522Z/tables/explained_variance_pca95.csv"
+    }
+  },
+  "scaler": "standard",
+  "whiten": false
+}

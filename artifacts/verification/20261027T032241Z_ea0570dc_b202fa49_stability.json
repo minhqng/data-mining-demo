@@ -1,0 +1,349 @@
+{
+  "checks": [
+    {
+      "check": "run_directory",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032241Z_ea0570dc_b202fa49_stability",
+      "status": "PASS"
+    },
+    {
+      "check": "run_json_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032241Z_ea0570dc_b202fa49_stability/run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_id_matches",
+      "detail": "20261027T032241Z_ea0570dc_b202fa49_stability",
+      "status": "PASS"
+    },
+    {
+      "check": "status_completed",
+      "detail": "status='completed' (failed runs are not verified as successes)",
+      "status": "PASS"
+    },
+    {
+      "check": "run_type_known",
+      "detail": "stability",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032241Z_ea0570dc_b202fa49_stability/config.snapshot.yaml",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_hash",
+      "detail": "config.snapshot.yaml matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "config_canonical_hash",
+      "detail": "snapshot content hashes to run.json config_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_dataset_hash",
+      "detail": "dataset=b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+      "status": "PASS"
+    },
+    {
+      "check": "processed_hash",
+      "detail": "processed=8fd30b3c9bfa87c806b9465ea87cf3a9af0547b228850da9e9b5e859b1151724",
+      "status": "PASS"
+    },
+    {
+      "check": "split_hash",
+      "detail": "current split files match the run's split hash",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:config.snapshot.yaml",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:figures/stability.png",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:metrics.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/ari_pairs.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_labels_gmm-k4-f9-standard-none-full-s42.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_labels_kmeans-k2-f9-robust-none-n-a-s42.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_labels_kmeans-k2-f9-standard-none-n-a-s42.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_labels_kmeans-k4-f9-standard-none-n-a-s42.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_labels_kmeans-k6-f9-standard-0.90-n-a-s42.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_labels_kmeans-k6-f9-standard-none-n-a-s42.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_runs.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/stability_summary.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032241Z_ea0570dc_b202fa49_stability/metrics.json",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_self_hash",
+      "detail": "metrics.json matches run.json metrics_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_schema",
+      "detail": "btl11.metrics.stability.v1",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_summary_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032241Z_ea0570dc_b202fa49_stability/tables/stability_summary.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_pairs_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032241Z_ea0570dc_b202fa49_stability/tables/ari_pairs.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_reference_n",
+      "detail": "reference cohort non-empty",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_ari_range",
+      "detail": "ARI values within [-1, 1]",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_labels_exist",
+      "detail": "6 label tables",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_base_column:stability_labels_gmm-k4-f9-standard-none-full-s42",
+      "detail": "base columns=['gmm-k4-f9-standard-none-full-s42/base']",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_summary_row:stability_labels_gmm-k4-f9-standard-none-full-s42",
+      "detail": "summary rows for finalist 'gmm-k4-f9-standard-none-full-s42': 1",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_seed_ari_mean:stability_labels_gmm-k4-f9-standard-none-full-s42",
+      "detail": "stored=0.978550117001, recomputed=0.978550117001",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_bootstrap_ari_mean:stability_labels_gmm-k4-f9-standard-none-full-s42",
+      "detail": "stored=0.93699058681, recomputed=0.93699058681",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_pairwise_ari_mean:stability_labels_gmm-k4-f9-standard-none-full-s42",
+      "detail": "stored=0.925511805036, recomputed=0.925511805036",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_reference_n:stability_labels_gmm-k4-f9-standard-none-full-s42",
+      "detail": "n_reference_ids=3000, labels=3000",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_base_column:stability_labels_kmeans-k2-f9-robust-none-n-a-s42",
+      "detail": "base columns=['kmeans-k2-f9-robust-none-n/a-s42/base']",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_summary_row:stability_labels_kmeans-k2-f9-robust-none-n-a-s42",
+      "detail": "summary rows for finalist 'kmeans-k2-f9-robust-none-n/a-s42': 1",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_seed_ari_mean:stability_labels_kmeans-k2-f9-robust-none-n-a-s42",
+      "detail": "stored=0.999691501046, recomputed=0.999691501046",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_bootstrap_ari_mean:stability_labels_kmeans-k2-f9-robust-none-n-a-s42",
+      "detail": "stored=0.999074503138, recomputed=0.999074503138",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_pairwise_ari_mean:stability_labels_kmeans-k2-f9-robust-none-n-a-s42",
+      "detail": "stored=0.999177336122, recomputed=0.999177336122",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_reference_n:stability_labels_kmeans-k2-f9-robust-none-n-a-s42",
+      "detail": "n_reference_ids=3000, labels=3000",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_base_column:stability_labels_kmeans-k2-f9-standard-none-n-a-s42",
+      "detail": "base columns=['kmeans-k2-f9-standard-none-n/a-s42/base']",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_summary_row:stability_labels_kmeans-k2-f9-standard-none-n-a-s42",
+      "detail": "summary rows for finalist 'kmeans-k2-f9-standard-none-n/a-s42': 1",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_seed_ari_mean:stability_labels_kmeans-k2-f9-standard-none-n-a-s42",
+      "detail": "stored=1, recomputed=1",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_bootstrap_ari_mean:stability_labels_kmeans-k2-f9-standard-none-n-a-s42",
+      "detail": "stored=0.991433298968, recomputed=0.991433298968",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_pairwise_ari_mean:stability_labels_kmeans-k2-f9-standard-none-n-a-s42",
+      "detail": "stored=0.992007692658, recomputed=0.992007692658",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_reference_n:stability_labels_kmeans-k2-f9-standard-none-n-a-s42",
+      "detail": "n_reference_ids=3000, labels=3000",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_base_column:stability_labels_kmeans-k4-f9-standard-none-n-a-s42",
+      "detail": "base columns=['kmeans-k4-f9-standard-none-n/a-s42/base']",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_summary_row:stability_labels_kmeans-k4-f9-standard-none-n-a-s42",
+      "detail": "summary rows for finalist 'kmeans-k4-f9-standard-none-n/a-s42': 1",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_seed_ari_mean:stability_labels_kmeans-k4-f9-standard-none-n-a-s42",
+      "detail": "stored=0.996929494103, recomputed=0.996929494103",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_bootstrap_ari_mean:stability_labels_kmeans-k4-f9-standard-none-n-a-s42",
+      "detail": "stored=0.980866881748, recomputed=0.980866881748",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_pairwise_ari_mean:stability_labels_kmeans-k4-f9-standard-none-n-a-s42",
+      "detail": "stored=0.982173961345, recomputed=0.982173961345",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_reference_n:stability_labels_kmeans-k4-f9-standard-none-n-a-s42",
+      "detail": "n_reference_ids=3000, labels=3000",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_base_column:stability_labels_kmeans-k6-f9-standard-0.90-n-a-s42",
+      "detail": "base columns=['kmeans-k6-f9-standard-0.90-n/a-s42/base']",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_summary_row:stability_labels_kmeans-k6-f9-standard-0.90-n-a-s42",
+      "detail": "summary rows for finalist 'kmeans-k6-f9-standard-0.90-n/a-s42': 1",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_seed_ari_mean:stability_labels_kmeans-k6-f9-standard-0.90-n-a-s42",
+      "detail": "stored=0.998738860164, recomputed=0.998738860164",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_bootstrap_ari_mean:stability_labels_kmeans-k6-f9-standard-0.90-n-a-s42",
+      "detail": "stored=0.982705532284, recomputed=0.982705532284",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_pairwise_ari_mean:stability_labels_kmeans-k6-f9-standard-0.90-n-a-s42",
+      "detail": "stored=0.985122369036, recomputed=0.985122369036",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_reference_n:stability_labels_kmeans-k6-f9-standard-0.90-n-a-s42",
+      "detail": "n_reference_ids=3000, labels=3000",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_base_column:stability_labels_kmeans-k6-f9-standard-none-n-a-s42",
+      "detail": "base columns=['kmeans-k6-f9-standard-none-n/a-s42/base']",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_summary_row:stability_labels_kmeans-k6-f9-standard-none-n-a-s42",
+      "detail": "summary rows for finalist 'kmeans-k6-f9-standard-none-n/a-s42': 1",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_seed_ari_mean:stability_labels_kmeans-k6-f9-standard-none-n-a-s42",
+      "detail": "stored=0.933422838387, recomputed=0.933422838387",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_bootstrap_ari_mean:stability_labels_kmeans-k6-f9-standard-none-n-a-s42",
+      "detail": "stored=0.916413242351, recomputed=0.916413242351",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:stability_pairwise_ari_mean:stability_labels_kmeans-k6-f9-standard-none-n-a-s42",
+      "detail": "stored=0.869597260876, recomputed=0.869597260876",
+      "status": "PASS"
+    },
+    {
+      "check": "stability_reference_n:stability_labels_kmeans-k6-f9-standard-none-n-a-s42",
+      "detail": "n_reference_ids=3000, labels=3000",
+      "status": "PASS"
+    },
+    {
+      "check": "license_metadata_present",
+      "detail": "license_status=pending_human_verification",
+      "status": "PASS"
+    }
+  ],
+  "n_checks": 68,
+  "path": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032241Z_ea0570dc_b202fa49_stability",
+  "run_id": "20261027T032241Z_ea0570dc_b202fa49_stability",
+  "run_type": "stability",
+  "status": "verified"
+}

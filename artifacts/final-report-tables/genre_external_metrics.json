@@ -1,0 +1,20 @@
+{
+  "adjusted_rand_vs_genre": {
+    "reason": null,
+    "value": 0.004067215673730017
+  },
+  "caveat": "Genre taxonomy does not define acoustic personas. Low/high agreement is diagnostic, not a target and not proof of cluster quality.",
+  "cluster_n": 2,
+  "cohort_rule": "Single-genre-only tracks (exactly one unique genre in track_genres). The cohort is declared before computing ARI/NMI; no labels were used for tuning.",
+  "genre_n_single_cohort": 112,
+  "n_assigned": 89741,
+  "n_omitted_not_single_label": 16299,
+  "n_single_genre_eval": 73442,
+  "normalized_mutual_info_vs_genre": {
+    "reason": null,
+    "value": 0.08168542875027116
+  },
+  "run_id": "20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2",
+  "schema": "btl11.genre_posthoc.v1",
+  "scope": "all_unique_tracks"
+}

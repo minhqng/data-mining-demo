@@ -1,0 +1,5 @@
+metric,value,direction,space,n_eval,method,reason
+calinski_harabasz,2912.1689358649155,maximize,f9|robust|none|whiten=False,3000,sklearn.metrics.calinski_harabasz_score,
+davies_bouldin,0.6730446949570569,minimize,f9|robust|none|whiten=False,3000,sklearn.metrics.davies_bouldin_score,
+silhouette,0.5841925293392386,maximize,f9|robust|none|whiten=False,3000,sklearn.metrics.silhouette_score(metric='euclidean'),
+silhouette_descriptive,0.5841925293392386,context,f9|robust|none|whiten=False,3000,"silhouette on a deterministic 3000-track sample of all tracks; in-sample descriptive, NOT model-selection evidence",

@@ -1,0 +1,7 @@
+metric,value,direction,space,n_eval,method,reason
+calinski_harabasz,2964.073441089159,maximize,f9|robust|none|whiten=False,3000,sklearn.metrics.calinski_harabasz_score,
+calinski_harabasz_delta_vs_dev,-276.5445183922234,context,delta: holdout minus development (same representation),3000,holdout CH - development CH,
+davies_bouldin,0.659256321260773,minimize,f9|robust|none|whiten=False,3000,sklearn.metrics.davies_bouldin_score,
+davies_bouldin_delta_vs_dev,0.008784677167714472,context,delta: holdout minus development (same representation),3000,holdout DB - development DB,
+silhouette,0.5902217754202084,maximize,f9|robust|none|whiten=False,3000,sklearn.metrics.silhouette_score(metric='euclidean'),
+silhouette_delta_vs_dev,-0.0053996482458193995,context,"delta: holdout fixed cohort minus development fixed cohort (same representation, different tracks)",3000,holdout silhouette - development silhouette,

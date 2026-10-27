@@ -1,0 +1,314 @@
+{
+  "checks": [
+    {
+      "check": "run_directory",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42",
+      "status": "PASS"
+    },
+    {
+      "check": "run_json_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42/run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_id_matches",
+      "detail": "20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42",
+      "status": "PASS"
+    },
+    {
+      "check": "status_completed",
+      "detail": "status='completed' (failed runs are not verified as successes)",
+      "status": "PASS"
+    },
+    {
+      "check": "run_type_known",
+      "detail": "candidate",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42/config.snapshot.yaml",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_hash",
+      "detail": "config.snapshot.yaml matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "config_canonical_hash",
+      "detail": "snapshot content hashes to run.json config_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_dataset_hash",
+      "detail": "dataset=b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+      "status": "PASS"
+    },
+    {
+      "check": "processed_hash",
+      "detail": "processed=8fd30b3c9bfa87c806b9465ea87cf3a9af0547b228850da9e9b5e859b1151724",
+      "status": "PASS"
+    },
+    {
+      "check": "split_hash",
+      "detail": "current split files match the run's split hash",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:assignments.parquet",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:config.snapshot.yaml",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:eval_ids.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:figures/cluster_sizes_fit.png",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:metrics.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:model.joblib",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:model_metadata.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/candidate_metrics.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/cluster_sizes_eval.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/cluster_sizes_fit.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42/metrics.json",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_self_hash",
+      "detail": "metrics.json matches run.json metrics_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_schema",
+      "detail": "btl11.metrics.candidate.v1",
+      "status": "PASS"
+    },
+    {
+      "check": "candidate_fit_scope",
+      "detail": "candidate fit/assignment scopes exclude eval from fitting",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42/assignments.parquet",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_schema",
+      "detail": "['track_id', 'cluster']",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_unique_ids",
+      "detail": "one row per track_id",
+      "status": "PASS"
+    },
+    {
+      "check": "candidate_assignments_scope",
+      "detail": "assignments=71813, dev=71813",
+      "status": "PASS"
+    },
+    {
+      "check": "candidate_fit_ids_hash",
+      "detail": "fit cohort unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "candidate_eval_ids_hash",
+      "detail": "eval cohort unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_checksum",
+      "detail": "assignments.parquet matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "model_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42/model.joblib",
+      "status": "PASS"
+    },
+    {
+      "check": "model_checksum",
+      "detail": "model.joblib matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "feature_order_declared",
+      "detail": "['acousticness', 'danceability', 'energy', 'valence', 'tempo']",
+      "status": "PASS"
+    },
+    {
+      "check": "no_metadata_in_features",
+      "detail": "no genre/ID/metadata in the model feature list",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_features_match_run",
+      "detail": "bundle feature order equals run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_algorithm_k",
+      "detail": "kmeans K=4",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_pca_components",
+      "detail": "None",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_training_ids",
+      "detail": "bundle trained_on hash equals run fit_ids_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_scaler",
+      "detail": "bundle=standard, doc=standard",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_pca_variance",
+      "detail": "bundle=None, doc=None",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_covariance",
+      "detail": "bundle=None, doc=None",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_feature_space",
+      "detail": "bundle=f5|standard|none|whiten=False, doc=f5|standard|none|whiten=False",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_n_fit",
+      "detail": "bundle=68813, doc=68813",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_seed",
+      "detail": "bundle=42, doc=42",
+      "status": "PASS"
+    },
+    {
+      "check": "estimator_kmeans_params",
+      "detail": "KMeans params match run.json/snapshot",
+      "status": "PASS"
+    },
+    {
+      "check": "cluster_ids_in_range",
+      "detail": "clusters within [0, 3]",
+      "status": "PASS"
+    },
+    {
+      "check": "eval_file_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42/eval_ids.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "eval_file_matches_split",
+      "detail": "stored eval cohort equals split eval IDs",
+      "status": "PASS"
+    },
+    {
+      "check": "eval_cluster_sizes_reconcile",
+      "detail": "stored={0: 1033, 1: 700, 2: 703, 3: 564}, observed={0: 1033, 1: 700, 2: 703, 3: 564}",
+      "status": "PASS"
+    },
+    {
+      "check": "predictions_match_assignments",
+      "detail": "re-prediction reproduces saved labels on the same cohort",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:silhouette",
+      "detail": "stored=0.225804976089, recomputed=0.225804976089",
+      "status": "PASS"
+    },
+    {
+      "check": "metric_space:silhouette",
+      "detail": "metric space identifier matches",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:davies_bouldin",
+      "detail": "stored=1.40694571259, recomputed=1.40694571259",
+      "status": "PASS"
+    },
+    {
+      "check": "metric_space:davies_bouldin",
+      "detail": "metric space identifier matches",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:calinski_harabasz",
+      "detail": "stored=982.067674063, recomputed=982.067674063",
+      "status": "PASS"
+    },
+    {
+      "check": "metric_space:calinski_harabasz",
+      "detail": "metric space identifier matches",
+      "status": "PASS"
+    },
+    {
+      "check": "evaluation_ids_hash",
+      "detail": "evaluation cohort hash matches",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:inertia_fit",
+      "detail": "stored=171306.403543, recomputed=171306.403543",
+      "status": "PASS"
+    },
+    {
+      "check": "license_metadata_present",
+      "detail": "license_status=pending_human_verification",
+      "status": "PASS"
+    }
+  ],
+  "n_checks": 61,
+  "path": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42",
+  "run_id": "20261027T032134Z_07fbb11b_b202fa49_kmeans_f5_standard_nopca_k4_s42",
+  "run_type": "candidate",
+  "status": "verified"
+}

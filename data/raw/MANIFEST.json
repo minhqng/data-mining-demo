@@ -1,0 +1,45 @@
+{
+  "audited_utc": "2026-10-27T08:04:20Z",
+  "auditor_version": "btl11.audit.v1",
+  "bytes": 20118244,
+  "canonical_url": "https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset",
+  "columns": 20,
+  "downloaded_utc": null,
+  "downloaded_utc_note": "The supplier did not record an authoritative retrieval timestamp; file_mtime_utc is filesystem metadata, not proof of download time.",
+  "file": "dataset.csv",
+  "file_mtime_utc": "2022-10-22T07:40:20Z",
+  "kaggle_dataset_id": "maharshipandya/-spotify-tracks-dataset",
+  "license_metadata_observed": {
+    "discrepancy": true,
+    "huggingface_mirror_license": "BSD",
+    "kaggle_page_license": "ODbL 1.0 (Open Data Commons Open Database License 1.0), copyright original authors",
+    "observed_utc": "2026-10-27",
+    "provenance_risk": "The mirror states the data was collected via Spotify's Web API. Spotify Developer Policy may restrict ML/AI reuse of Platform/Content; this observation is not legal advice and does not clear redistribution.",
+    "sources": [
+      "https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset",
+      "https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset"
+    ]
+  },
+  "license_note": "Local academic analysis was authorized by the project owner for the assigned BTL11 coursework. Kaggle lists ODbL 1.0 while the Hugging Face mirror lists BSD; the discrepancy and Spotify API provenance remain unresolved. Public redistribution and Spotify Platform/Content ML/AI reuse are NOT cleared and remain a human-verification gate. Raw data is gitignored and must not be published.",
+  "license_review_owner_action": "Verify Kaggle terms and institutional policy in docs/DATASET_PROVENANCE.md before any public release, deployment or redistribution.",
+  "license_review_preserved_from_previous_audit": true,
+  "license_review_previous": {
+    "license_review_owner": null,
+    "license_review_owner_action": "Verify Kaggle terms and institutional policy in docs/DATASET_PROVENANCE.md before any public release, deployment or redistribution.",
+    "license_review_status": "pending_human_verification",
+    "license_reviewed_utc": null,
+    "raw_sha256_matched": true,
+    "redistribution_allowed": false
+  },
+  "license_review_status": "pending_human_verification",
+  "local_analysis_authorized_by_owner": true,
+  "local_path": "/home/minhqng/Documents/data-mining-demo/data/raw/dataset.csv",
+  "manifest_version": "btl11.manifest.v1",
+  "redistribution_allowed": false,
+  "rows": 114000,
+  "schema_hash": "7c17a4c7652b0d1572d7c832fe425485071668d16928dbe3c490a73a5a8c7fc3",
+  "sha256": "b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+  "source": "Kaggle — Spotify Tracks Dataset",
+  "track_genre_nunique": 114,
+  "track_id_unique": 89741
+}

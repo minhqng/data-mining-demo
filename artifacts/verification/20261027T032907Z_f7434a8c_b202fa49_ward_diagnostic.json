@@ -1,0 +1,164 @@
+{
+  "checks": [
+    {
+      "check": "run_directory",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic",
+      "status": "PASS"
+    },
+    {
+      "check": "run_json_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic/run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_id_matches",
+      "detail": "20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic",
+      "status": "PASS"
+    },
+    {
+      "check": "status_completed",
+      "detail": "status='completed' (failed runs are not verified as successes)",
+      "status": "PASS"
+    },
+    {
+      "check": "run_type_known",
+      "detail": "ward",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic/config.snapshot.yaml",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_hash",
+      "detail": "config.snapshot.yaml matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "config_canonical_hash",
+      "detail": "snapshot content hashes to run.json config_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_dataset_hash",
+      "detail": "dataset=b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+      "status": "PASS"
+    },
+    {
+      "check": "processed_hash",
+      "detail": "processed=8fd30b3c9bfa87c806b9465ea87cf3a9af0547b228850da9e9b5e859b1151724",
+      "status": "PASS"
+    },
+    {
+      "check": "split_hash",
+      "detail": "current split files match the run's split hash",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:config.snapshot.yaml",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:figures/ward_dendrogram.png",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:metrics.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/ward_assignments.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/ward_cluster_sizes.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic/metrics.json",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_self_hash",
+      "detail": "metrics.json matches run.json metrics_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_schema",
+      "detail": "btl11.metrics.ward.v1",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_assignments_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic/tables/ward_assignments.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_ids_unique",
+      "detail": "sample IDs unique",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_sample_within_fit_ids",
+      "detail": "Ward sample is a subset of the development fit IDs",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_n_sample",
+      "detail": "n_eval=2000, rows=2000",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_sample_hash",
+      "detail": "Ward sample ID hash matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_metrics_n_sample",
+      "detail": "metrics context n_sample matches the assignment table",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_k",
+      "detail": "Ward cluster count matches declared K",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:ward_ari_vs_selected",
+      "detail": "stored=0.969204637376, recomputed=0.969204637376",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_figure_exists",
+      "detail": "dendrogram exists",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_descriptor_present",
+      "detail": "Ward run records the selected descriptor",
+      "status": "PASS"
+    },
+    {
+      "check": "ward_selected_run",
+      "detail": "Ward references a completed candidate with the same descriptor",
+      "status": "PASS"
+    },
+    {
+      "check": "license_metadata_present",
+      "detail": "license_status=pending_human_verification",
+      "status": "PASS"
+    }
+  ],
+  "n_checks": 31,
+  "path": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic",
+  "run_id": "20261027T032907Z_f7434a8c_b202fa49_ward_diagnostic",
+  "run_type": "ward",
+  "status": "verified"
+}

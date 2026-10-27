@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btl11"
+version = "1.0.0"
+description = "BTL11 — Music Genre & Audio Track Segmentation: reproducible unsupervised audio clustering"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { text = "Academic project; dataset not redistributed" }
+authors = [{ name = "BTL11 student team" }]
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "scipy>=1.13",
+  "scikit-learn>=1.5",
+  "matplotlib>=3.9",
+  "seaborn>=0.13",
+  "PyYAML>=6.0",
+  "joblib>=1.4",
+  "pyarrow>=16.0",
+  "psutil>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+btl11 = "btl11.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+  "realdata: tests that require the non-redistributable real Kaggle snapshot (excluded in CI)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [".venv", "artifacts", "data", "build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E501"]

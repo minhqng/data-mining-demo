@@ -1,0 +1,46 @@
+{
+  "feature_space_id": "f9|robust|none|whiten=False",
+  "generated_utc": "2026-10-27T03:56:57Z",
+  "kinds": [
+    "pca",
+    "tsne",
+    "profile",
+    "genre"
+  ],
+  "n_assignments": 89741,
+  "outputs": {
+    "genre": {
+      "skipped": "genre tables already exist; immutable run artifacts are not overwritten"
+    },
+    "pca": {
+      "coordinates": "artifacts/posthoc/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/tables/pca2_coordinates.csv",
+      "explained_variance_ratio": [
+        0.5569878318698738,
+        0.2503152749339991
+      ],
+      "figure": "artifacts/posthoc/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/figures/pca2_scatter.png",
+      "note": "PCA(2) is re-fitted on the fitted model's transformed feature space for display. It does not replace the model representation.",
+      "sample_ids_sha256": "ec898f842426359a583c2fc39216a3b45250a17a18026e9795a7562df1f3d277",
+      "sample_n": 6000
+    },
+    "profile": {
+      "skipped": "profiles.csv already exists; immutable run artifacts are not overwritten"
+    },
+    "tsne": {
+      "coordinates": "artifacts/posthoc/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/tables/tsne_coordinates.csv",
+      "figure": "artifacts/posthoc/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/figures/tsne2d.png",
+      "note": "Visual only: not used to select K, models, or to compute validity metrics.",
+      "perplexity": 30.0,
+      "random_state": 42,
+      "sample_ids_sha256": "6b7e2229a2045a75d8c35f02b2f6b92defc74a4aa4cab56c34b7dda0aaa31dc3",
+      "sample_n": 3000
+    }
+  },
+  "run_id": "20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2",
+  "visual_caveats": {
+    "location": "Post-hoc views are written under artifacts/posthoc/<run_id>/ and do not mutate run artifacts.",
+    "pca2": "PCA2D is a display projection, not the default clustering representation.",
+    "sampling": "Deterministic bounded samples; underlying coordinates are exported as CSV.",
+    "tsne": "t-SNE is visual only; distances, densities and K must not be read from it."
+  }
+}

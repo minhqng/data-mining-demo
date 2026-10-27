@@ -1,0 +1,429 @@
+{
+  "checks": [
+    {
+      "check": "run_directory",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2",
+      "status": "PASS"
+    },
+    {
+      "check": "run_json_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_id_matches",
+      "detail": "20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2",
+      "status": "PASS"
+    },
+    {
+      "check": "status_completed",
+      "detail": "status='completed' (failed runs are not verified as successes)",
+      "status": "PASS"
+    },
+    {
+      "check": "run_type_known",
+      "detail": "final_refit",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/config.snapshot.yaml",
+      "status": "PASS"
+    },
+    {
+      "check": "config_snapshot_hash",
+      "detail": "config.snapshot.yaml matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "config_canonical_hash",
+      "detail": "snapshot content hashes to run.json config_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_dataset_hash",
+      "detail": "dataset=b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+      "status": "PASS"
+    },
+    {
+      "check": "processed_hash",
+      "detail": "processed=8fd30b3c9bfa87c806b9465ea87cf3a9af0547b228850da9e9b5e859b1151724",
+      "status": "PASS"
+    },
+    {
+      "check": "split_hash",
+      "detail": "current split files match the run's split hash",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:assignments.parquet",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:config.snapshot.yaml",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:figures/cluster_sizes_all.png",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:figures/genre_cluster_heatmap.png",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:figures/profile_heatmap.png",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:metrics.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:model.joblib",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:model_metadata.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:profiles.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/cluster_sizes_all.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/genre_cluster_incidence.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/genre_dominant_by_cluster.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/genre_external_metrics.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/profile_metadata.json",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/profiles_long.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:tables/representative_tracks.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_hash:verification_ids.csv",
+      "detail": "sha256 matches run manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/metrics.json",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_self_hash",
+      "detail": "metrics.json matches run.json metrics_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "metrics_schema",
+      "detail": "btl11.metrics.final_refit.v1",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_model_id",
+      "detail": "final_refit_model_id equals this run",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_holdout_used",
+      "detail": "full refit records that the holdout was already used",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_descriptor_present",
+      "detail": "descriptor and frozen descriptor must be recorded (legacy: descriptor field)",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_descriptor_equals_frozen",
+      "detail": "selection did not change after freeze",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_descriptor_hash",
+      "detail": "legacy run: descriptor used because frozen_descriptor is absent",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_scope",
+      "detail": "full refit scope is all unique tracks",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_n_fit",
+      "detail": "n_fit=89741, expected=89741",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_fit_ids_hash",
+      "detail": "fit ID hash covers every unique track",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_n_eval",
+      "detail": "n_eval=3000, expected=3000",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_holdout_type",
+      "detail": "holdout type/status=holdout/completed",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_holdout_frozen_run",
+      "detail": "holdout validated the exact evaluation model cited by the refit",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_holdout_descriptor",
+      "detail": "holdout and refit share the same frozen descriptor",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_holdout_dataset_sha256",
+      "detail": "dataset_sha256=b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_holdout_split_sha256",
+      "detail": "split_sha256=a23b24e34a30dd2f3b8c1aeb883985e332278c0abacac17e80aa3642d41a56ca",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_evaluation_model_type",
+      "detail": "evaluation model type/status=candidate/completed",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_evaluation_model_descriptor",
+      "detail": "evaluation model descriptor matches the refit descriptor",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_evaluation_model_dataset_sha256",
+      "detail": "dataset_sha256=b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_evaluation_model_split_sha256",
+      "detail": "split_sha256=a23b24e34a30dd2f3b8c1aeb883985e332278c0abacac17e80aa3642d41a56ca",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/assignments.parquet",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_schema",
+      "detail": "['track_id', 'cluster']",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_unique_ids",
+      "detail": "one row per track_id",
+      "status": "PASS"
+    },
+    {
+      "check": "final_refit_assignments_scope",
+      "detail": "assignments=89741, all=89741",
+      "status": "PASS"
+    },
+    {
+      "check": "assignments_checksum",
+      "detail": "assignments.parquet matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "model_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/model.joblib",
+      "status": "PASS"
+    },
+    {
+      "check": "model_checksum",
+      "detail": "model.joblib matches run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "feature_order_declared",
+      "detail": "['acousticness', 'danceability', 'energy', 'valence', 'tempo', 'loudness', 'speechiness', 'instrumentalness', 'liveness']",
+      "status": "PASS"
+    },
+    {
+      "check": "no_metadata_in_features",
+      "detail": "no genre/ID/metadata in the model feature list",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_features_match_run",
+      "detail": "bundle feature order equals run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_algorithm_k",
+      "detail": "kmeans K=2",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_pca_components",
+      "detail": "None",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_training_ids",
+      "detail": "bundle trained_on hash equals run fit_ids_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_scaler",
+      "detail": "bundle=robust, doc=robust",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_pca_variance",
+      "detail": "bundle=None, doc=None",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_covariance",
+      "detail": "bundle=None, doc=None",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_feature_space",
+      "detail": "bundle=f9|robust|none|whiten=False, doc=f9|robust|none|whiten=False",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_n_fit",
+      "detail": "bundle=89741, doc=89741",
+      "status": "PASS"
+    },
+    {
+      "check": "bundle_seed",
+      "detail": "bundle=42, doc=42",
+      "status": "PASS"
+    },
+    {
+      "check": "estimator_kmeans_params",
+      "detail": "KMeans params match run.json/snapshot",
+      "status": "PASS"
+    },
+    {
+      "check": "cluster_ids_in_range",
+      "detail": "clusters within [0, 1]",
+      "status": "PASS"
+    },
+    {
+      "check": "verification_file_exists",
+      "detail": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2/verification_ids.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "verification_cohort_matches",
+      "detail": "final verification cohort is reproducible",
+      "status": "PASS"
+    },
+    {
+      "check": "final_cluster_sizes_reconcile",
+      "detail": "stored={0: 72211, 1: 17530}, observed={0: 72211, 1: 17530}",
+      "status": "PASS"
+    },
+    {
+      "check": "final_profiles_exist",
+      "detail": "profiles.csv exists",
+      "status": "PASS"
+    },
+    {
+      "check": "final_genre_table_exists",
+      "detail": "post-hoc genre incidence exists",
+      "status": "PASS"
+    },
+    {
+      "check": "predictions_match_assignments",
+      "detail": "re-prediction reproduces saved labels on the same cohort",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:silhouette",
+      "detail": "stored=0.584192529339, recomputed=0.584192529339",
+      "status": "PASS"
+    },
+    {
+      "check": "metric_space:silhouette",
+      "detail": "metric space identifier matches",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:davies_bouldin",
+      "detail": "stored=0.673044694957, recomputed=0.673044694957",
+      "status": "PASS"
+    },
+    {
+      "check": "metric_space:davies_bouldin",
+      "detail": "metric space identifier matches",
+      "status": "PASS"
+    },
+    {
+      "check": "metric:calinski_harabasz",
+      "detail": "stored=2912.16893586, recomputed=2912.16893586",
+      "status": "PASS"
+    },
+    {
+      "check": "metric_space:calinski_harabasz",
+      "detail": "metric space identifier matches",
+      "status": "PASS"
+    },
+    {
+      "check": "evaluation_ids_hash",
+      "detail": "evaluation cohort hash matches",
+      "status": "PASS"
+    },
+    {
+      "check": "license_metadata_present",
+      "detail": "license_status=pending_human_verification",
+      "status": "PASS"
+    }
+  ],
+  "n_checks": 84,
+  "path": "/home/minhqng/Documents/data-mining-demo/artifacts/runs/20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2",
+  "run_id": "20261027T032943Z_f7434a8c_b202fa49_final_refit_kmeans_k2",
+  "run_type": "final_refit",
+  "status": "verified"
+}

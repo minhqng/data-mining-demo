@@ -1,0 +1,116 @@
+project:
+  name: btl11_music_segmentation
+  seed: 42
+  raw_path: data/raw/dataset.csv
+  output_dir: artifacts/runs
+  license_review_required: true
+
+data:
+  unit: unique_track_id
+  on_conflicting_track_features: fail
+  feature_tolerance_atol: 1.0e-8
+  feature_tolerance_rtol: 1.0e-6
+  missing_numeric: drop_after_audit
+  split_method: stable_id_hash
+  dev_fraction: 0.80
+  holdout_fraction: 0.20
+  split_seed: 42
+  eval_cohort_size: 3000
+  eval_seed: 42
+
+features:
+  primary: [acousticness, danceability, energy, valence, tempo,
+            loudness, speechiness, instrumentalness, liveness]
+  required_ablation: [acousticness, danceability, energy, valence, tempo]
+  forbidden_primary: [track_genre, track_id, track_name, artists,
+                      album_name, popularity, duration_ms, explicit,
+                      key, mode, time_signature]
+
+preprocess:
+  scaler_primary: standard
+  scaler_ablation: robust
+  pca_candidates: [none, 0.90, 0.95]
+  pca_whiten: false
+
+search:
+  quick_k: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  quick_seeds: [42]
+  stability_seeds: [11, 23, 37, 51, 71]
+  silhouette_sample_size: 3000
+  silhouette_seed: 42
+  max_fit_count_warning: 250
+
+kmeans:
+  init: k-means++
+  n_init: 20
+  max_iter: 500
+  tol: 0.0001
+
+gmm:
+  covariance_candidates: [diag, full]
+  n_init_quick: 2
+  n_init_final: 5
+  max_iter: 300
+  reg_covar_quick: 1.0e-6
+  reg_covar_fallback: [1.0e-5, 1.0e-4]
+  init_params: kmeans
+  require_convergence: true
+
+visualization:
+  pca_plot_components: 2
+  tsne_sample_size: 3000
+  tsne_perplexity: 30
+  tsne_random_state: 42
+  scatter_sample_size: 6000
+
+hierarchical:
+  enabled: conditional
+  sample_size: 2000
+  linkage: ward
+  metric: euclidean
+
+compliance:
+  canonical_kaggle_url: https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
+  kaggle_dataset_id: maharshipandya/-spotify-tracks-dataset
+  allow_pending_license_local_analysis: true
+  local_analysis_basis: >-
+    The project owner supplied the exact mandated Kaggle snapshot and explicitly
+    authorized local academic analysis for university BTL11. Public redistribution
+    and any Spotify Platform/Content ML/AI reuse remain pending human verification.
+  redistribution_allowed: false
+
+selection:
+  # Evidence-based shortlist after baseline_f9_standard K=2..12 and GMM diag/full.
+  # K-Means profiles: K=2 acoustic-vs-energetic; K=4 adds dance/live splits;
+  # K=6 adds instrumental/ambient and speech-heavy personas.
+  # GMM BIC reaches the K=12 search boundary while silhouette degrades; K=4 full
+  # is kept as a parsimonious soft-clustering comparator, not chosen by BIC alone.
+  baseline_experiment_set: baseline_f9_standard
+  shortlist_k: [2, 4, 6]
+  finalists:
+    - {algorithm: kmeans, k: 2, covariance_type: null, feature_set: f9, scaler: standard, pca: null, seed: 42}
+    - {algorithm: kmeans, k: 4, covariance_type: null, feature_set: f9, scaler: standard, pca: null, seed: 42}
+    - {algorithm: kmeans, k: 6, covariance_type: null, feature_set: f9, scaler: standard, pca: null, seed: 42}
+    # Ablation standouts, reviewed with their own raw-unit profiles:
+    - {algorithm: kmeans, k: 2, covariance_type: null, feature_set: f9, scaler: robust, pca: null, seed: 42}
+    - {algorithm: kmeans, k: 6, covariance_type: null, feature_set: f9, scaler: standard, pca: 0.90, seed: 42}
+    - {algorithm: gmm, k: 4, covariance_type: full, feature_set: f9, scaler: standard, pca: null, seed: 42}
+  # FROZEN BEFORE HOLDOUT: robust K2 selected on development evidence only.
+  # Validity in its own representation: Sil=0.5956, DB=0.6505, sizes 19.5%/80.5%.
+  # Stability: seed ARI mean=0.99969, bootstrap ARI mean=0.99907; K6-standard was
+  # less stable (seed 0.9334, bootstrap 0.9164) and had a 1.13% tiny cluster.
+  frozen:
+    - {algorithm: kmeans, k: 2, covariance_type: null, feature_set: f9, scaler: robust, pca: null, seed: 42}
+  selected:
+    {algorithm: kmeans, k: 2, covariance_type: null, feature_set: f9, scaler: robust, pca: null, seed: 42}
+  ablation_algorithms: [kmeans]
+  ablation_covariance: full
+  stability_bootstrap: 5
+  stability_n_init_gmm: 5
+  notes: "Frozen before the one-time holdout check; GMM full K4 is complementary, not selected."
+
+extensions:
+  decision_tree_surrogate: false
+  association_rules: false
+  dbscan: false
+  dashboard: false

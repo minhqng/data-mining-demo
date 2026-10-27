@@ -1,0 +1,27 @@
+# Never commit the non-redistributable raw Kaggle CSV or credentials.
+data/raw/*.csv
+!artifacts/INDEX.csv
+
+# Derived/generated artifacts are reproducible from CLI + raw data.
+data/processed/
+data/splits/
+artifacts/runs/
+artifacts/sweeps/
+artifacts/ablations/
+artifacts/comparisons/
+artifacts/robustness/
+artifacts/stability/
+artifacts/ward/
+artifacts/eda/
+*.joblib
+
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+.env
+.DS_Store
